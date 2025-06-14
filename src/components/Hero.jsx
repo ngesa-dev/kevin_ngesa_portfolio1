@@ -1,6 +1,5 @@
 
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
@@ -22,7 +21,7 @@ const Hero = () => {
 
         {/* CANVAS */}
         <div className="absolute inset-0 z-0">
-          <ComputersCanvas />
+          {/*<ComputersCanvas />*/}
         </div>
       </section>
     </>

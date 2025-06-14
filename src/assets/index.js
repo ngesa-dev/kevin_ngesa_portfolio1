@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import menu from "./menu.svg";
 import close from "./close.svg";
 import profile from './profile.jpg'
@@ -11,7 +11,6 @@ import portfolio_builder from './portfolio-builder.png'
 
 
 export {
-  logo,
   menu,
   close,
   profile,
