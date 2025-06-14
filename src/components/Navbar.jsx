@@ -44,7 +44,7 @@ const Navbar = () => {
         >
           <img src={ngesa_logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-extrabold cursor-pointer flex '>
-            Ngesa &nbsp;
+            Ngesa Kevin &nbsp;
             <span className='sm:block hidden'> | Practical Devs</span>
           </p>
         </Link>
