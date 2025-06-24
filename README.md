@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <div align='center'>
 <br/>
 <a>
@@ -51,4 +51,4 @@ git clone https://github.com/Kevin-Ngesa/kevinngesaportfolio1.git
 cd kevinngesaportfolio1
 npm install
 npm run dev
->>>>>>> e66f54ce4e3d73ed78b6f98b3b2cb073d04139d3
+
