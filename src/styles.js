@@ -15,7 +15,7 @@ const styles = {
     "block h-1 mt-1 bg-gradient-to-r from-transparent via-yellow-500 to-transparent rounded-full w-full max-w-xs mx-auto",
 
     sectionStyling:
-    "w-full px-6 py-16 bg-gray-900 text-white rounded-lg",
+    "w-full px-6 py-16 bg-tertiary text-white rounded-lg",
 
     sectionDivStyling:
     "text-center mb-12"

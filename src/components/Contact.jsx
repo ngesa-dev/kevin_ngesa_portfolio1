@@ -96,7 +96,7 @@ const Contact = () => {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your good name?"
-                className="bg-tertiary text-white placeholder:text-secondary font-medium px-6 py-4 rounded-lg outline-none border-2 border-transparent focus:border-green-500 transition-colors duration-300"
+                className="bg-tertiaryLight text-white placeholder:text-secondary font-medium px-6 py-4 rounded-lg outline-none border-2 border-transparent focus:border-green-500 transition-colors duration-300"
               />
             </label>
 
@@ -110,7 +110,7 @@ const Contact = () => {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="What's your web address?"
-                className="bg-tertiary text-white placeholder:text-secondary font-medium px-6 py-4 rounded-lg outline-none border-2 border-transparent focus:border-green-500 transition-colors duration-300"
+                className="bg-tertiaryLight text-white placeholder:text-secondary font-medium px-6 py-4 rounded-lg outline-none border-2 border-transparent focus:border-green-500 transition-colors duration-300"
               />
             </label>
 
@@ -124,7 +124,7 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What you want to say?"
-                className="bg-tertiary text-white placeholder:text-secondary font-medium px-6 py-4 rounded-lg outline-none border-2 border-transparent focus:border-green-500 transition-colors duration-300"
+                className="bg-tertiaryLight text-white placeholder:text-secondary font-medium px-6 py-4 rounded-lg outline-none border-2 border-transparent focus:border-green-500 transition-colors duration-300"
               />
             </label>
 

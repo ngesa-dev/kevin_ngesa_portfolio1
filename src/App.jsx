@@ -5,7 +5,7 @@ import { About, Contact, Services, Feedbacks, Hero, Navbar,TechSkills,Projects,F
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
+      <div className='relative z-0 bg-tertiary'>
         <div className=''>
           <Navbar />
           <Hero />

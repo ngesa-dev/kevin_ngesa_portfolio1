@@ -7,6 +7,8 @@ import ecommerce_pic1 from './ecommerce_pic1.png'
 import e_learning_pic from './e_learning_pic.png'
 import foodstore from './foodstore.jpg'
 import portfolio_builder from './portfolio-builder.png'
+import bg_image from './bg_image.jpg'
+
 
 
 
@@ -18,6 +20,8 @@ export {
   ecommerce_pic1,
   e_learning_pic,
   portfolio_builder,
-  foodstore
+  foodstore,
+  bg_image,
+  
 
 };

@@ -20,7 +20,7 @@ const Feedbacks = () => {
   }, [controls]);
 
   return (
-    <section className="w-full px-4 py-16 bg-primary text-white overflow-hidden">
+    <section className="w-full px-4 py-16 bg-tertiary text-white overflow-hidden">
       {/* Heading */}
       <div className={`${styles.sectionDivStyling}`}>
         <h2 className={`${styles.sectionHeadText}`}>

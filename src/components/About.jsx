@@ -29,7 +29,7 @@ const About = () => {
         {/* Right: Description + Buttons */}
         <div className="flex-1 text-left">
           <p className="text-lg mb-6">
-           Hi, I'm Ngesa Kevin— a MERN stack developer who builds responsive, user-friendly web applications that help businesses grow.
+           Hi, I'm Kevin Ngesa— a full-stack web developer who builds responsive, user-friendly web applications that help businesses grow.
 I specialize in developing practical, high-performing solutions that simplify workflows, improve user experience, and drive revenue. 
 With a focus on clean code and real-world results, I turn ideas into powerful digital tools.
           </p>

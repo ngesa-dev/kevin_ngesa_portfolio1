@@ -1,23 +1,20 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import {  menu, close,ngesa_logo } from "../assets";
+import { menu, close, ngesa_logo } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  const menuRef = useRef();
+
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 100);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -25,11 +22,21 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (toggle && menuRef.current && !menuRef.current.contains(event.target)) {
+        setToggle(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [toggle]);
+
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${
         scrolled ? "bg-green-500" : "bg-green-400"
       }`}
     >
@@ -44,8 +51,8 @@ const Navbar = () => {
         >
           <img src={ngesa_logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-extrabold cursor-pointer flex '>
-            Ngesa &nbsp;
-            <span className='sm:block hidden'> | Practical Devs</span>
+            Kevin Ngesa &nbsp;
+            <span className='sm:block hidden'> | Ngesa Devs</span>
           </p>
         </Link>
 
@@ -63,7 +70,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className='sm:hidden flex flex-1 justify-end items-center' ref={menuRef}>
           <img
             src={toggle ? close : menu}
             alt='menu'
@@ -84,7 +91,7 @@ const Navbar = () => {
                     active === nav.title ? "text-white" : "text-secondary"
                   }`}
                   onClick={() => {
-                    setToggle(!toggle);
+                    setToggle(false);
                     setActive(nav.title);
                   }}
                 >
