@@ -51,12 +51,17 @@ const Navbar = () => {
         >
           <img src={ngesa_logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-extrabold cursor-pointer flex '>
+<<<<<<< HEAD
             Kevin Ngesa &nbsp;
             <span className='sm:block hidden'> | Ngesa Devs</span>
+=======
+            Ngesa Kevin &nbsp;
+            <span className='sm:block hidden'> | Practical Devs</span>
+>>>>>>> e66f54ce4e3d73ed78b6f98b3b2cb073d04139d3
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden lg:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -70,7 +75,11 @@ const Navbar = () => {
           ))}
         </ul>
 
+<<<<<<< HEAD
         <div className='sm:hidden flex flex-1 justify-end items-center' ref={menuRef}>
+=======
+        <div className='lg:hidden flex flex-1 justify-end items-center'>
+>>>>>>> e66f54ce4e3d73ed78b6f98b3b2cb073d04139d3
           <img
             src={toggle ? close : menu}
             alt='menu'
