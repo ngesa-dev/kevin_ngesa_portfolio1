@@ -12,6 +12,7 @@ import bg_image from './bg_image.jpg'
 
 
 
+
 export {
   menu,
   close,
@@ -22,6 +23,7 @@ export {
   portfolio_builder,
   foodstore,
   bg_image,
+ 
   
 
 };

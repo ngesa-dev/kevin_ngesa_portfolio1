@@ -5,24 +5,25 @@ import { About, Contact, Services, Feedbacks, Hero, Navbar,TechSkills,Projects,F
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-tertiary'>
-        <div className=''>
-          <Navbar />
-          <Hero />
-        </div >
-        <About/>
-        <Services />
-       <TechSkills/>
-        <Projects/>
-    
-        <Contact/>
-            <Feedbacks/>
-       
-        <Footer/>
-     
-        
-      </div>
-    </BrowserRouter>
+  <div className="relative z-0 bg-tertiary">
+    <header>
+      <Navbar />
+    </header>
+
+    <main>
+      <Hero />
+      <About />
+      <Services />
+      <TechSkills />
+      <Projects />
+      <Contact />
+      <Feedbacks />
+    </main>
+
+    <Footer />
+  </div>
+</BrowserRouter>
+
   );
 }
 
