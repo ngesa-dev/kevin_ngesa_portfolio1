@@ -5,7 +5,6 @@ import {
   FaCss3Alt,
   FaJs,
   FaGitAlt,
-
   FaCode,
   FaDatabase,
   FaMobileAlt,

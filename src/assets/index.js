@@ -1,7 +1,7 @@
 
 import menu from "./menu.svg";
 import close from "./close.svg";
-import profile from './profile.jpg'
+import profile from './profile.png'
 import ngesa_logo from './ngesa_logo.png'
 import ecommerce_pic1 from './ecommerce_pic1.png'
 import e_learning_pic from './e_learning_pic.png'
